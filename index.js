@@ -8,7 +8,8 @@ import roomsRoute from "./routes/rooms.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
- 
+mongoose.set('strictQuery', false);
+
 const  app = express();
 dotenv.config()
 const connect = async () => {
